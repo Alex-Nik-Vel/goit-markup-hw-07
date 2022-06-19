@@ -513,11 +513,11 @@ p {
 
 /*___section____ */
 
-.list-pecul {
+.specialty {
   display: flex;
   justify-content: center;
 }
-.pecul-item::before {
+.specialty__item::before {
   margin-bottom: 30px;
   display: block;
   content: "";
@@ -529,10 +529,10 @@ p {
   background-position: center;
   background-size: 70px 70px;
 }
-.pecul-item:nth-child(1)::before {
+.specialty__item:nth-child(1)::before {
   background-image: url(../svg/Icon/Groupantena.svg);
 }
-.pecul-item:nth-child(2)::before {
+.specialty__item:nth-child(2)::before {
   background-image: url(../svg/Icon/clock.svg);
 }
 .diagrama::before {
@@ -541,21 +541,20 @@ p {
 .astronavt::before {
   background-image: url(../svg/Icon/astronaut.svg);
 }
-.pecul-item {
+.specialty__item {
   padding: 0;
   min-width: 270px;
 }
-.list-pecul .pecul-item + .pecul-item {
+.specialty .specialty__item + .specialty__item {
   margin-left: 30px;
 }
-.title-pecul {
+.title--specialty {
   padding-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
-
-.pecul-desc {
+.specialty__desc {
   padding: 0;
   margin: 0;
   border: 0;
@@ -564,11 +563,11 @@ p {
 }
 
 /* <!--What are we doing--> */
-.section-do {
+.section--do {
   padding-bottom: 94px;
 }
-.title-do,
-.title-teams,
+.title--do,
+.title--teams,
 .title--client {
   font-size: 36px;
   line-height: 1.17;
