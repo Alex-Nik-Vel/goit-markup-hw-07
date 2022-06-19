@@ -19,28 +19,32 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="p-header">
-      <div class="container main-nav">
-        <nav class="nav">
+    <header class="header">
+      <div class="container container--addres">
+        <nav class="header__nav">
           <a
-            href="https://alex-nik-vel.github.io/goit-markup-hw-06/"
             class="logo"
+            href="https://alex-nik-vel.github.io/goit-markup-hw-06/"
           >
-            <span class="logo-web">Web</span>Studio
+            <span class="logo--web">Web</span>Studio
           </a>
           <ul class="list-ul site-nav">
-            <li class="nav-item">
-              <a class="link" href="./index.html">Студия</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./index.html">Студия</a>
             </li>
-            <li class="nav-item">
-              <a class="link current" href="./portfolio.html">Портфолио</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link current" href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
-            <li class="nav-item"><a class="link" href="">Контакты</a></li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <div class="nav-contact list-ul">
-          <a class="contacts" href="mailto:info@devstudio.com">
-            <svg class="icon-hed">
+        <div class="contacts list-ul">
+          <a class="contacts__mailphone" href="mailto:info@devstudio.com">
+            <svg class="contacts__icon">
               <use
                 href="../goit-markup-hw-04/svg/symbol-defs.svg#icon-letter"
               ></use>
@@ -48,10 +52,9 @@
             info@devstudio.com
           </a>
 
-          <a class="contacts phone" href="tel:+38-096-111-11-11">
-            <svg class="icon-hed">
+          <a class="contacts__mailphone" href="tel:+38-096-111-11-11">
+            <svg class="contacts__icon">
               <use
-                class="icon-h"
                 href="../goit-markup-hw-04/svg/symbol-defs.svg#icon-phone"
               ></use>
             </svg>
@@ -286,84 +289,79 @@
     </main>
     <!--FOOTER-->
     <footer class="footer">
-      <div class="container">
-        <div class="addres-social">
-          <div class="logo-addres">
-            <a
-              href="https://alex-nik-vel.github.io/goit-markup-hw-06/"
-              class="logo logo-foot"
+      <div class="container container--addres">
+        <div class="footer__addres">
+          <a
+            class="logo logo--foot"
+            href="https://alex-nik-vel.github.io/goit-markup-hw-06/"
+          >
+            <span class="logo--web">Web</span>Studio
+          </a>
+          <address class="footer-addres">
+            <p>г. Киев, пр-т Леси Украинки, 26</p>
+            <a class="footer-contacts" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
             >
-              <span class="logo-web">Web</span>Studio
+            <a class="footer-contacts" href="tel:+38-096-111-11-11">
+              <pre>+38 096 111 11 11</pre>
             </a>
-            <address class="footer-addres">
-              <p>г. Киев, пр-т Леси Украинки, 26</p>
-              <a class="footer-contacts" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-              <a class="footer-contacts" href="tel:+38-096-111-11-11">
-                <pre>+38 096 111 11 11</pre>
-              </a>
-            </address>
+          </address>
+        </div>
+        <!-- social -->
+        <div class="footer-soc-form">
+          <div class="footer-social">
+            <h4 class="subtitle-social">Присоединяйтесь</h4>
+            <ul class="list-ul social-icons-footer">
+              <li>
+                <a
+                  class="socials socials-foot"
+                  href="https://www.instagram.com/"
+                >
+                  <svg class="social-icon icon-foot">
+                    <use href="./svg/symbol-defs.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="socials socials-foot" href="https://twitter.com/">
+                  <svg class="social-icon icon-foot">
+                    <use href="./svg/symbol-defs.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="socials socials-foot"
+                  href="https://www.facebook.com/"
+                >
+                  <svg class="social-icon icon-foot">
+                    <use href="./svg/symbol-defs.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="socials socials-foot" href="https://ua.linkedin.com/">
+                  <svg class="social-icon icon-foot">
+                    <use href="./svg/symbol-defs.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
-          <!-- social -->
-          <div class="footer-soc-form">
-            <div class="footer-social">
-              <h4 class="subtitle-social">Присоединяйтесь</h4>
-              <ul class="list-ul social-icons-footer">
-                <li>
-                  <a
-                    class="socials socials-foot"
-                    href="https://www.instagram.com/"
-                  >
-                    <svg class="social-icon icon-foot">
-                      <use href="./svg/symbol-defs.svg#icon-instagram-2"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a class="socials socials-foot" href="https://twitter.com/">
-                    <svg class="social-icon icon-foot">
-                      <use href="./svg/symbol-defs.svg#icon-twitter-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="socials socials-foot"
-                    href="https://www.facebook.com/"
-                  >
-                    <svg class="social-icon icon-foot">
-                      <use href="./svg/symbol-defs.svg#icon-facebook-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="socials socials-foot"
-                    href="https://ua.linkedin.com/"
-                  >
-                    <svg class="social-icon icon-foot">
-                      <use href="./svg/symbol-defs.svg#icon-linkedin-1"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+          <form name="mailing" autocomplete="on" novalidate>
+            <div class="footer-form">
+              <h4 class="subtitle-mail">Подпишитесь на рассылку</h4>
+              <label class="label-mailing">
+                <input
+                  class="input-mailing"
+                  type="mail"
+                  name="email"
+                  placeholder="E-mail"
+                />
+                <button class="btn-mailing" type="submit">Подписаться</button>
+              </label>
             </div>
-            <form name="mailing" autocomplete="on" novalidate>
-              <div class="footer-form">
-                <h4 class="subtitle-mail">Подпишитесь на рассылку</h4>
-                <label class="label-mailing">
-                  <input
-                    class="input-mailing"
-                    type="mail"
-                    name="email"
-                    placeholder="E-mail"
-                  />
-                  <button class="btn-mailing" type="submit">Подписаться</button>
-                </label>
-              </div>
-            </form>
-          </div>
+          </form>
         </div>
       </div>
     </footer>

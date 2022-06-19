@@ -37,14 +37,20 @@ p {
   padding-right: 15px;
 }
 /* _____header _____*/
-.p-header {
+.header {
   outline: solid #ececec 1px;
 }
-.main-nav {
+.container--addres {
   display: flex;
   align-items: center;
 }
-
+/* Nav */
+.header__nav {
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
 /* logotype */
 .logo {
   display: flex;
@@ -56,26 +62,25 @@ p {
   line-height: 1.2;
   text-decoration: none;
 }
-.logo-web {
+.logo--web {
   color: var(--booton-color);
 }
-/* Nav */
 
-.nav {
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
 .site-nav {
   display: flex;
   margin-left: 93px;
+  }
+.site-nav__item {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  margin-top: 32px;
 }
-.site-nav .nav-item + .nav-item {
+.site-nav .site-nav__item + .site-nav__item {
   margin-left: 50px;
 }
-.link,
-.contacts {
+.site-nav__link,
+.contacts__mailphone {
   color: var(--title-color);
   font-weight: 500;
   font-size: 14px;
@@ -83,32 +88,32 @@ p {
   text-decoration: none;
   transition: color 250ms var(--timing-fuction);
 }
-.nav-contact {
+.contacts {
   display: flex;
   margin-left: auto;
   fill: var(--texst-color);
 }
-.nav-contact .contacts:not(:last-child) {
+.contacts__mailphone {
+  display: flex;
+  color: var(--texst-color);
+  transition: color 250ms var(--timing-fuction);
+}
+.contacts .contacts__mailphone:not(:last-child) {
   margin-right: 50px;
 }
-.link:hover,
-.link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: var(--booton-color);
 }
-.link.current {
+.site-nav__link.current {
   color: var(--booton-color);
 }
 /* line nav */
 
-.nav-item {
-  position: relative;
-  width: 100%;
-  height: 48px;
-  margin-top: 32px;
-}
 
-.link.current::after,
-.link:hover::after {
+
+.site-nav__link.current::after,
+.site-nav__link:hover::after {
   position: absolute;
   display: block;
   bottom: 0;
@@ -120,7 +125,7 @@ p {
 }
 
 /* contacts */
-.icon-hed {
+.contacts__icon {
   padding: 0;
   display: inline;
   margin-right: 10px;
@@ -129,15 +134,11 @@ p {
   background-size: contain;
   transition: fill 250ms var(--timing-fuction);
 }
-.contacts {
-  display: flex;
-  color: var(--texst-color);
-  transition: color 250ms var(--timing-fuction);
-}
-.contacts:hover,
-.icon-hed:hover,
-.contacts:focus,
-.icon-hed:focus {
+
+.contacts__mailphone:hover,
+.contacts__icon:hover,
+.contacts__mailphone:focus,
+.contacts__icon:focus {
   color: var(--booton-color);
   fill: var(--booton-color);
 }
@@ -146,7 +147,7 @@ p {
 .title {
   color: var(--title-color);
 }
-.hero {
+.section--hero {
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
@@ -168,7 +169,7 @@ p {
 
   text-align: center;
 }
-.title-hero {
+.section__title {
   margin-top: 0;
   margin-bottom: 40px;
   margin-left: auto;
@@ -223,7 +224,6 @@ p {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--timing-fuction);
 }
-
 
 .mod-icon {
   align-items: center;
@@ -376,8 +376,36 @@ p {
   color: var(--booton-color);
 }
 
-/*___ BOOtON ___*/
-.modal-close {
+/*___ BuTToN ___*/
+.btn {
+}
+.section__btn-hero {
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  min-width: 200px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: inherit;
+  line-height: 1.88;
+  background-color: var(--booton-color);
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: 0;
+  transition: background-color 250ms var(--timing-fuction),
+    color 250ms var(--timing-fuction);
+}
+.section__btn-hero:hover,
+.section__btn-hero:focus {
+  background-color: #f5f4fa;
+  color: rgba(33, 33, 33, 1);
+}
+.backdrop__btn-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 8px;
   right: 8px;
@@ -387,17 +415,17 @@ p {
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
   transition: color 250ms var(--timing-fuction);
 }
-.modal-close:hover,
-.modal-close:focus {
+.backdrop__btn-close:hover,
+.backdrop__btn-close:focus {
   color: var(--booton-color);
 }
 .form-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
@@ -406,9 +434,7 @@ p {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
+
   letter-spacing: 0.06em;
   color: #ffffff;
   background: var(--booton-color);
@@ -418,35 +444,12 @@ p {
   border: 0;
 }
 
-.button-hero {
-  font-family: inherit;
-  background-color: var(--booton-color);
-  color: white;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  height: 50px;
-  min-width: 200px;
-  border-radius: 4px;
-  border: 0;
-  transition: background-color 250ms var(--timing-fuction),
-    color 250ms var(--timing-fuction);
-}
-.button-hero:hover,
-.button-hero:focus {
-  background-color: #f5f4fa;
-  color: rgba(33, 33, 33, 1);
-}
 /* button porfolio */
 .btn-portfolio {
   display: flex;
+  justify-content: center;
   margin-top: 0;
   margin-bottom: 50px;
-  justify-content: center;
 }
 .btn-portfolio .portfo-item + .portfo-item {
   margin-left: 8px;
@@ -476,9 +479,11 @@ p {
   /* transition: box-shadow 250ms var(--timing-fuction); */
 }
 .btn-mailing {
+  display: flex;
+  align-items: center;
+  text-align: center;
   margin-left: 12px;
   margin-right: 0;
-
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;
@@ -487,24 +492,19 @@ p {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-
   color: #ffffff;
   border: 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 .btn-mailing::after {
-  margin-left: 10px;
-  margin-right: 28px;
-
   display: inline-flex;
   content: "";
   height: 24px;
   width: 24px;
+  margin-left: 10px;
+  margin-right: 28px;
   background-image: url(../svg/Icon/Telegram.svg);
   background-size: contain;
 }
@@ -794,17 +794,14 @@ p {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.logo-addres > a {
+
+.logo--foot {
+  display: inline-block;
   color: white;
   padding: 0;
   margin: 0;
 }
-.logo-foot {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-}
-.logo-addres {
+.footer__addres {
   display: flex;
   flex-direction: column;
 }
@@ -897,4 +894,3 @@ p {
 .subtitle-mail {
   padding-top: 1px;
 }
-
