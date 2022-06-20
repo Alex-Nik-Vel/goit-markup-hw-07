@@ -575,24 +575,24 @@ p {
   margin-top: 0;
   margin-bottom: 50px;
 }
-.do-item + .do-item {
+.doing__item + .doing__item {
   margin-left: 30px;
 }
-.title-do {
+.title--do {
   margin-top: 0;
   margin-bottom: 50px;
 }
-.do-item {
+.doing__item {
   position: relative;
   overflow: hidden;
   margin: 0;
 }
-.do-img {
+.doing__img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-.desc-do {
+.doing__desc {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -613,32 +613,33 @@ p {
 .section--team {
     background-color: #f5f4fa;
 }
-.title-team {
+.title--card {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
-.list-team {
+.card {
   background-color: white;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.list-team + .list-team {
+.card + .card {
   margin-left: 30px;
 }
-.desc-teams {
+.card__desk {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.team-desc {
+.card__specialization {
   font-size: 14px;
   line-height: 1.19;
   width: 270px;
   text-align: center;
 }
+   /*Section team__social-icons */
 .social-icons {
   margin: 0;
   padding: 0;
