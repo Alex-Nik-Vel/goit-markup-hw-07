@@ -65,55 +65,56 @@
     <!--MAIN-->
     <main>
       <!-- HERO -->
-      <section class="section section--hero">
-        <h1 class="section__title">Эффективные решения для вашего бизнеса</h1>
-        <button class="section__btn-hero btn" data-modal-open type="button">
+      <section class="section section-hero">
+        <h1 class="section-hero__title">Эффективные решения для вашего бизнеса</h1>
+        <button class="button button-hero " data-modal-open type="button">
           Заказать услугу
         </button>
       </section>
+      <!-- MODAL -->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button class="backdrop__btn-close btn" data-modal-close>
-            <svg class="mod-icon">
+          <button class="button button-close" data-modal-close>
+            <svg class="button-close__icon">
               <use href="./svg/symbol-defs.svg#icon-btn-close"></use>
             </svg>
           </button>
-          <form class="modal-form">
-            <div class="modal-field">
-              <b class="modal-caption"
+          <form class="form">
+            <div class="forml__field">
+              <b class="form__caption"
                 >Оставьте свои данные, мы вам перезвоним</b
               >
-              <label for="name" class="form-label">Имя</label>
-              <div class="form-label">
-                <input class="form-input" type="text" name="name" />
-                <svg class="icon-form">
+              <label class="form__label--bottom" for="name">Имя</label>
+              <div class="form__label">
+                <input class="form__input" type="text" name="name" />
+                <svg class="form__icon">
                   <use href="./svg/symbol-defs.svg#icon-user"></use>
                 </svg>
               </div>
             </div>
-            <div class="modal-field">
-              <label for="tel">Телефон</label>
-              <div class="form-label">
-                <input class="form-input" type="phone" name="phone" />
-                <svg class="icon-form">
+            <div class="forml__field">
+              <label class="form__label--bottom" for="tel">Телефон</label>
+              <div class="form__label">
+                <input class="form__input" type="phone" name="phone" />
+                <svg class="form__icon">
                   <use href="./svg/symbol-defs.svg#icon-phone2"></use>
                 </svg>
               </div>
             </div>
-            <div class="modal-field">
-              <label for="email">Почта</label>
-              <div class="form-label">
-                <input class="form-input" type="email" name="email" />
-                <svg class="icon-form">
+            <div class="forml__field">
+              <label class="form__label--bottom" for="email">Почта</label>
+              <div class="form__label">
+                <input class="form__input" type="email" name="email" />
+                <svg class="form__icon">
                   <use href="./svg/symbol-defs.svg#icon-letter2"></use>
                 </svg>
               </div>
             </div>
 
-            <div class="modal-field">
-              <label for="comment"> Коментарий</label>
+            <div class="forml__field">
+              <label class="form__label--bottom" for="comment"> Коментарий</label>
               <textarea
-                class="form-textarea"
+                class="form__textarea"
                 name="comment"
                 id="comment"
                 cols="30"
@@ -122,20 +123,19 @@
               ></textarea>
             </div>
 
-            <div class="modal-field">
-              <label class="label-check">
-                <input class="form-check" type="checkbox" name="" />
-                <svg class="icon-check">
+            <div class="check">
+              <label class="check__label">
+                <input class="check__input" type="checkbox" name="" />
+                <svg class="check__icon">
                   <use href="./svg/symbol-defs.svg#icon-checkmark"></use>
                 </svg>
-                <span class="checkbox-text">
+                <span class="check__text">
                   Соглашаюсь с рассылкой и принимаю
-                  <a href=" " class="agree">Условия договора</a>
+                  <a href=" " class="check__text--agree">Условия договора</a>
                 </span>
               </label>
             </div>
-
-            <button class="form-btn" type="submit">Отправить</button>
+            <button class="button button-form" type="submit">Отправить</button>
           </form>
         </div>
       </div>
@@ -505,6 +505,7 @@
               </li>
             </ul>
           </div>
+          <!-- footer form -->
           <form name="mailing" autocomplete="on" novalidate>
             <div class="footer__form">
               <h4 class="footer__subtitle">Подпишитесь на рассылку</h4>
@@ -515,7 +516,7 @@
                   name="email"
                   placeholder="E-mail"
                 />
-                <button class="btn-mailing" type="submit">Подписаться</button>
+                <button class="button button-mailing" type="submit">Подписаться</button>
               </label>
             </div>
           </form>
