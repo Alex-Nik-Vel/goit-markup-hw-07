@@ -1,0 +1,31 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &-hero {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-top: 0;
+    max-width: 1600px;
+    min-height: 600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/hero/hero-fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $footer-header-backgraund;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  &--do {
+    padding-bottom: 94px;
+  }
+  &--team {
+    background-color: #f5f4fa;
+  }
+}
