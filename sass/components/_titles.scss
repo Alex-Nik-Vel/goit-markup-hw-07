@@ -10,7 +10,7 @@ p {
 
 // TITLES
 .title {
-  color: $title-color;
+  color: green;
   &--hero {
     margin-top: 0;
     margin-bottom: 40px;
@@ -36,7 +36,7 @@ p {
   &--do,
   &--teams,
   &--client {
-    font-size: 36px;
+    font-size: 10px;
     line-height: 1.17;
     text-align: center;
     margin-top: 0;

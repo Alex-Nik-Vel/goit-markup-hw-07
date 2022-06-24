@@ -54,7 +54,7 @@ p {
 }
 
 .title {
-  color: #212121;
+  color: green;
 }
 .title--hero {
   margin-top: 0;
@@ -79,7 +79,7 @@ p {
   text-transform: uppercase;
 }
 .title--do, .title--teams, .title--client {
-  font-size: 36px;
+  font-size: 10px;
   line-height: 1.17;
   text-align: center;
   margin-top: 0;
