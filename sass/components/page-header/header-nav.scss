@@ -1,0 +1,92 @@
+.header {
+  outline: solid #ececec 1px;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav__item {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  margin-top: 32px;
+}
+
+.site-nav .site-nav__item + .site-nav__item {
+  margin-left: 50px;
+}
+
+.site-nav__link,
+.contacts__mailphone {
+  color: $title-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  transition: color 250ms $timing-fuction;
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus {
+  color: $booton-color;
+}
+
+.site-nav__link.current {
+  color: $booton-color;
+}
+
+/* line nav */
+
+.site-nav__link.current::after,
+.site-nav__link:hover::after {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: $booton-color;
+  border-radius: 2px;
+}
+
+/* contacts */
+.contacts {
+  display: flex;
+  margin-left: auto;
+  fill: $text-color;
+}
+
+.contacts__mailphone {
+  display: flex;
+  color: $text-color;
+  transition: color 250ms $timing-fuction;
+}
+
+.contacts .contacts__mailphone:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts__icon {
+  padding: 0;
+  display: inline;
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  transition: fill 250ms $timing-fuction;
+}
+
+.contacts__mailphone:hover,
+.contacts__icon:hover,
+.contacts__mailphone:focus,
+.contacts__icon:focus {
+  color: $booton-color;
+  fill: $booton-color;
+}
