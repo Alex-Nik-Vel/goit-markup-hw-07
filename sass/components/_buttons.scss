@@ -70,10 +70,9 @@
   justify-content: center;
   margin-top: 0;
   margin-bottom: 50px;
-}
-
-.btn-portfolio .btn-portfolio__items + .btn-portfolio__items {
-  margin-left: 8px;
+  &__items + &__items {
+    margin-left: 8px;
+  }
 }
 
 .button-portfolio {

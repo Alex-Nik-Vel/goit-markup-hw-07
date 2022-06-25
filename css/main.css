@@ -599,8 +599,7 @@ p {
   margin-top: 0;
   margin-bottom: 50px;
 }
-
-.btn-portfolio .btn-portfolio__items + .btn-portfolio__items {
+.btn-portfolio__items + .btn-portfolio__items {
   margin-left: 8px;
 }
 
