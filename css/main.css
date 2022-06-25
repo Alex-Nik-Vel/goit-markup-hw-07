@@ -622,7 +622,6 @@ p {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;
-  color: #ffffff;
   letter-spacing: 0.06em;
   color: #ffffff;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -632,7 +631,7 @@ p {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  content: "";
+  content: " ";
   height: 24px;
   width: 24px;
   margin-left: 10px;
