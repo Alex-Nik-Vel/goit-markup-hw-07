@@ -4,8 +4,9 @@
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-}
-.container--addres {
-  display: flex;
-  align-items: center;
+  &--footer,
+  &--header {
+    display: flex;
+    align-items: center;
+  }
 }
