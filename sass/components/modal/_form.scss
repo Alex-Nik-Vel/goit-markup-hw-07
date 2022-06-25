@@ -49,16 +49,15 @@
   color: #757575;
   cursor: pointer;
   transition: outline 250ms $timing-fuction;
+  &__input:hover,
+  &__input:focus {
+    outline: 1px solid $booton-color;
+  }
 }
 
 .form__input:hover + .form__icon,
 .form__input:focus + .form__icon {
   color: $booton-color;
-}
-
-.form__input:hover,
-.form__input:focus {
-  outline: 1px solid $booton-color;
 }
 
 .form__icon {
@@ -89,10 +88,9 @@
   cursor: pointer;
   transition: outline 250ms $timing-fuction;
   resize: none;
-}
-
-.form__textarea:focus {
-  outline: 1px solid $booton-color;
+  &:focus {
+    outline: 1px solid $booton-color;
+  }
 }
 
 .form__label--bottom {
