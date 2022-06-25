@@ -9,10 +9,9 @@
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-}
-
-.footer__addres--p {
-  padding-top: 20px;
+  &--p {
+    padding-top: 20px;
+  }
 }
 
 .footer__contacts {
@@ -24,15 +23,14 @@
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   transition: color 250ms $timing-fuction;
-}
+  &--phone {
+    margin: 0;
+  }
 
-.footer__contacts--phone {
-  margin: 0;
-}
-
-.footer__contacts:hover,
-.footer__contacts:focus {
-  color: $booton-color;
+  &:hover,
+  &:focus {
+    color: $booton-color;
+  }
 }
 
 .footer__subtitle {
